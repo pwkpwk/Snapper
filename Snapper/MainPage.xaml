@@ -8,6 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel>
+            <CaptureElement x:Name="CapturePreview" Width="320" Height="240" />
+            <Image x:Name="CapturedImage" Stretch="Fill" Width="320" Height="240" />
+            <Button HorizontalAlignment="Center" Click="OnRenderClicked">
+                <TextBlock Text="Render" />
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>
